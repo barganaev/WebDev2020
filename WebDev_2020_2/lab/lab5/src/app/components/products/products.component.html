@@ -1,0 +1,28 @@
+    <div  *ngIf="category.category=='No category(reselect please)'; else right">
+        <h1>Back please and reselect</h1>
+    </div>
+
+    <ng-template #right>
+        <div class="flex">
+            <div class="list-show">
+                <h1>
+                    Category: {{category.category}}
+                </h1>
+        
+                <h1>Products: </h1>
+                <ul *ngFor = "let product of category.products">
+                    <li>
+                        <button [routerLink]="['/products', product.id]"  (click) = "senddetail(product)">
+                            {{product.title}}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+           
+            
+        </div>
+        
+
+    </ng-template>
+
+    

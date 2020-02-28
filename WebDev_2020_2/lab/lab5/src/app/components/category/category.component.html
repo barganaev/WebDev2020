@@ -1,0 +1,4 @@
+<div *ngFor="let item of categories">
+    <br>
+<button (click)="sendId(item)" [routerLink]="['/categories', item.id,'products']">{{item.category}}</button>
+</div>
