@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Войдите на Facebook</title>
+        <link rel="icon" href="D:\Users\АДмин\Documents\Programming\Others\facebook_ico_picture.ico">
+<!--        <link href="style.css" type="text/css" rel="stylesheet"> -->
+
+        <style>
+            header{
+    position: relative;
+    background: linear-gradient(rgb(70,91,149), rgb(70,91,149));
+    height: 150px;
+    margin-top: -10px;
+    border-bottom: 2px, solid rgb(19,55,131);
+}
+.Top{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.Bottom{
+    width: 1000px;
+    margin: 40px auto;
+}
+    body{
+        background: linear-gradient(white, #E5ECEC);
+       
+    }
+    .logo{
+        position: relative;
+        float: left;
+
+        width: 400px;
+    }
+    .Login{
+        margin-left: -100px;
+        width: 50%;
+        float: left;
+    }
+    .Top label{
+        color: white;
+    }
+    .Email{
+        height: 20px;
+        width: 280px;
+        font-size: 16px;
+        padding-left: 400px;
+    } 
+   
+    .Password{
+        padding-left: 700px;
+        margin-top: -20px;
+        height: 20px;
+        width: 280px;
+        font-size: 16px;
+    }
+  
+    .Password a{
+        color: rgb(140, 158, 219);
+        right:0px;
+    }
+    .Loginbutton{
+        padding-left: 900px;
+        padding-top:-60px;
+        
+    }
+    .Loginbutton input{
+        border: 1px solid rgb(40, 70, 125);
+        border-radius: 2px;
+        color: white;
+        background: rgb(70, 95, 178);
+        height: 30px;
+        width: 60px; 
+       
+        
+    }
+    .LoginButton input:hover{
+        background: rgb(19,55,139);
+        cursor: pointer;
+    }
+    .KeepInTouch{
+        margin-top: 50px;
+        float: left;
+        width: 55%;
+        
+    }
+    .KeepInTouch p{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(34, 44, 81);    
+    }
+    .KeepInTouch image{
+      position: relative;
+    }
+    .Account{
+        width: 45%;
+        float: left;
+    }
+    .LogUp h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    .LogUp p{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .LogUp .Always free{
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+  
+    .Account input[type="text"]{
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    .Account input[type="password"]{
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    .Account input[type="radio"]{
+        margin-bottom: 20px;
+        margin-top: 15px;
+        border-radius: 20px;
+    }
+    .Account input[type="date"]{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .Account input[type="submit"]{
+        height: 30px;
+        width: 200px;
+        font-weight: solid;
+        background: rgb(101, 169, 83);
+        border: 1px solid rgb(59, 110, 34);
+        font-size: 23px;
+        color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .Account label{
+        font-size: 20px;
+        font-weight: medium;
+        margin-bottom: 15px;
+    }
+    .Account .click{
+        color: rgb(119, 119, 122);
+        font-size: 12px;
+        
+    }
+    .Account .pageForStars{
+        color: rgb(61, 61, 41);
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .Account .emailOrNumber, .newPassword{
+        width: 84%;
+    }
+    .tooltip{
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px;
+        color: rgb(79, 79, 143);
+        cursor: pointer;
+        width: 270px;
+
+    }
+    .tooltip .tooltiptext{
+        visibility: hidden;
+        height: 180px;
+        width: 320px;
+        background-color:white;
+        color: black;
+        text-align: left;
+        padding: 10px 10px;
+        border-radius: 12px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -40px;
+        cursor: text;
+        opacity: 0;
+        transition: opacity 0.3s;
+        }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 40%;
+        margin-left: -70px;
+        border-width: 23px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        cursor: text;
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+    footer{
+        position: relative;
+        background: white;
+        margin-top:500px;
+        height: 100px;
+       
+    }
+    #lang, .foot a{
+        padding-left: 60px;
+    }
+    .foot a{
+        color: rgb(60, 60, 138);
+        text-decoration: none;
+    }
+    .foot p{
+        margin-left: 60px;
+        margin-bottom: -3px;
+    }
+        </style>
+
+    </head> 
+    <body>
+        <header>
+
+            <div class="Top">
+
+                <div class="logo"> 
+                    <a href="https://www.facebook.com/" target="_blank"><img style="position: static; left: -100px; bottom: 0px; height:130px; width: 320px;" src="D:\Users\АДмин\Documents\Programming\Others\logo.jpg" id="Logo"/></a>
+                </div>
+
+                <div class="LogIn">
+                    <form action="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110" method="POST">
+                    <div class="Email">
+                        <label for="email">Электронный адрес или номер телефона</label>
+                        <input type="text" name="email" id="email" autofocus> 
+                    </div>
+                            
+                    <div class="Password">
+                        <label for="password">Пароль</label><br>
+                        <input type="password" id="password" name="password"><br>
+                        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar" style="text-decoration: none">Забыли аккаунт?</a>
+                    </div>
+                    <div class="Loginbutton">
+                        <input type="submit" value="Вход">
+                    </div>
+                </form>
+                </div> 
+            </div>
+        </header>
+        <div class="Bottom">
+            <div class="KeepInTouch">
+                <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+                <img src="D:\Users\АДмин\Documents\Programming\Others\uses.png" height="250" width="500" alt="users" />
+            </div>
+
+            <div class="LogUp">
+                <h2>Регистрация</h2>
+                <p class="Always free">Это бесплатно и всегда будет бесплатно</p>
+
+                <div class="Account">
+                    <form action="https://www.facebook.com/confirmemail.php?next=https%3A%2F%2Fwww.facebook.com%2F&rd&__req=10" method="POST">
+                            <input type = "text" name = "first-name" placeholder= "Имя" required>
+                            <input type = "text" name = "surname" placeholder = "Фамилия" required><br>
+                            <input type = "text" name = "emailOrNumber" class = "emailOrNumber" placeholder = "Номер мобильного телефона или эл. адрес" required><br>
+                            <input type = "password" name = "newPassword" class = "newPassword" placeholder = "Новый пароль" required><br>
+                            <label>Дата рождения</label><br>
+                            <input type = "date" name = "date" required>
+                           
+                            <div class="tooltip">Зачем указывать дату рождения?
+                                <span class="tooltiptext">Если вы укажете дату рождения, мы сможем показывать вам на Facebook контент, актуальный человеку вашего возраста. Если вы хотите изменить то, кто может видеть вашу дату рождения, перейдите в раздел «Информация» своего профиля. Более подробную информацию можно найти в нашей <a href="https://ru-ru.facebook.com/privacy/explanation/">Политике использования данных.</a></span>
+                            </div>
+                            <input type = "radio" name = "gender" required>
+                            <label class="Female"> Женщина </label>
+                            <input type = "radio" name = "gender">
+                            <label class="Male"> Мужчина </label><br>
+    
+                            <span class="click">Нажимая кнопку регистрация, вы принимаете <a href = "https://www.facebook.com/legal/terms/update" target="_blank" style="text-decoration: none;"> Условия</a>,<a href = "https://www.facebook.com/about/privacy/update" style="text-decoration: none";target="_blank">Политику использования данных </a>и<a href = "https://www.facebook.com/policies/cookies/" target= "_blank" style="text-decoration: none"> Политику в отношении файлов cookie</a>.
+                            Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</span><br>
+                            <br>
+                            <input type="submit" value="Регистрация"><br>
+                            <span class="pageForStars"><a href = "https://www.facebook.com/pages/creation/?ref_type=registration_form" style="text-decoration: none"> Создать Страницу</a> знаменитости, музыкальной группы или компании.</span><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="foot">
+        <span id="lang" >Русский</span>
+        <a href="https://www.facebook.com/">English (US)</a>
+        <a href="https://tr-tr.facebook.com/">Türkçe</a>
+        <a href="https://id-id.facebook.com/">Bahasa Indonesia</a>
+        <a href="https://kk-kz.facebook.com/">Қазақша</a>
+        <a href="https://de-de.facebook.com/">Deutsch</a>
+        <a href="https://sq-al.facebook.com/">Shqip</a>
+        <a href="https://es-la.facebook.com/">Español</a>
+        <a href="https://pt-br.facebook.com/">Português (Brasil)</a>
+        <p>........................................................................................................................................................................................................................................................................................................................................................</p>
+    </footer>
+</html>

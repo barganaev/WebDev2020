@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>My site</title>
+    <link rel="stylesheet" href="example12.css">
+
+    <script> 
+        var el_up = document.getElementById("GFG_UP"); 
+        var el_down = document.getElementById("GFG_DOWN"); 
+          
+        el_up.innerHTML = "Click on the button to disable" 
+                    + " scrolling on input element."; 
+          
+        function GFG_FUN() { 
+            var input = document.getElementById("input"); 
+              
+            input.addEventListener("mousewheel",  
+                function(event){  
+                    this.blur()  
+                }); 
+              
+            el_down.innerHTML = "Mouse wheel disabled!"; 
+        } 
+    </script>  
+
+</head>
+<body>
+    <div class="sign_in">
+        <div class="tele">
+            <a href="https://telegram.org"><img src="D:\Users\АДмин\Documents\Programming\Others\telegram_iconca.png" alt="Here's the telegram icon" style="width: 40px; margin-top: 18px; margin-left: 18px; margin-right: -21px; margin-bottom: 20px;"></a>
+            <div class="tele_telegram">
+                <a href="https://telegram.org">Telegram</a>
+            </div>
+            <div class="tele_next">
+                Next
+            </div>
+        </div>
+        <div class="signn">
+            <div class="signn_1">
+                <div class="signn_12">
+                    Sign in
+                </div>
+                <div class="description">
+                    Please choose your country and enter your full phone number.
+                </div>
+                <div class="country">
+                    Country
+                    <div class="country_text">
+                        <input type="text" placeholder="Kazakhstan" style="border: none;">
+                    </div>
+                </div>
+                <div class="code_and_phone">
+                    <div class="codee">
+                        Code
+                        <div class="codee_number">
+                            <input type="number" placeholder="+7 7" style="border: none;">
+                        </div>
+                    </div>
+                    <div class="phone_number">
+                        <!--phone number-->
+                        <input type="number" class="input" placeholder="Phone number">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="learn">
+            <div class="welcome">
+            Welcome to the official Telegram web-client.
+            </div>
+            <div class="learn_more">
+                Learn more
+            </div>
+        </div>
+    </div>
+    <div class="main_div">
+        <div class="head_div">
+        </div>
+        <div class="foot_div">
+        </div>
+    </div>
+    
+</body>
+</html>

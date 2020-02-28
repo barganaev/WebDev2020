@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.main_div {
+    /* display: flex;
+    flex-direction: column;
+    background-color: red; */
+    width: 100%;
+    height: 100vh;
+}
+.head_div {
+    height: 30%;
+    background-color: #5682a3;
+}
+.foot_div {
+    height: 70%;
+    background-color: #e7ebf0;
+}
+.sign_in {
+    position: absolute;
+    height: 67%;
+    width: 27%;
+    margin-left: 36.5%;
+    margin-top: 6.5%;
+    display: flex;
+    flex-direction: column;
+}
+.tele {
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    background-color: #5682a3;
+}
+
+.tele_telegram {
+    width: 76.5%;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 93%;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    padding-top: 6%;
+    padding-left: 10%;
+    padding-right: 7%;
+    padding-bottom: 2%;
+}
+
+.tele_next {
+    display: block;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    color: white;
+    font-weight: 700;
+    line-height: 20px;
+    padding-top: 6%;
+}
+
+.signn_12 {
+    height: 16%;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.description {
+    height: 28%;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    line-height: 18px;
+    color: gray;
+}
+
+.country {
+    height: 28%;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    color: gray;
+}
+
+.country_text input::-webkit-input-placeholder {
+    color: black;
+}
+
+.codee_number input::-webkit-input-placeholder {
+    color: black;
+}
+
+
+.country_text {
+    width: 50px;
+    padding-top: 3%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.code_and_phone {
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+}
+
+.codee {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 44px;
+    margin-bottom: 22px;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    color: gray;
+}
+
+.codee_number {
+    width: 50px;
+    padding-top: 15%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.phone_number {
+    padding-top: 7.6%;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 12px;
+    color: gray;
+}
+
+.input {
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+.signn_1{
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+    line-height: 14px;
+    /*padding: 25px;*/  
+    padding-bottom: 12%;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-top: 11%;
+    height: 68%;
+    width: 100%;
+    position: absolute;
+    /*text-align: center;*/
+    /*margin-left: 15%;*/
+    /*margin-top: 10%;*/
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 16px;
+}
+
+.signn {
+    height: 75%;
+    border-radius: 2px;
+    
+    background-color: white;
+}
+
+
+
+.learn {
+/*    box-sizing: border-box;
+    color: rgb(132, 162, 188);
+    display: block;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 20px;*/
+    height: 20%;
+    background-color: #e7ebf0;
+}
+
+.welcome {
+    box-sizing: border-box;
+    color: rgb(132, 162, 188);
+    display: block;
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 19px;
+}
+
+.learn_more {
+    padding-top: 11px;
+    font-weight: 800;
+    box-sizing: border-box;
+    color:rgb(132, 162, 188);
+    font-family: Tahoma, sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    text-align: center;
+}
