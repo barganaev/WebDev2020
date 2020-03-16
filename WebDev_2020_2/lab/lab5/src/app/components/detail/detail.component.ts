@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoriesService } from 'src/app/services/categories.service';
-import { iProduct } from 'src/app/services/model';
+import { IProduct } from 'src/app/product';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -9,11 +10,15 @@ import { iProduct } from 'src/app/services/model';
 })
 export class DetailComponent implements OnInit {
 
-  constructor(private data: CategoriesService) { }
-  product: iProduct
+  constructor(private categoryService: CategoriesService,private route: ActivatedRoute) { }
+  product: IProduct
   ngOnInit(): void {
-    this.data.currentProduct.subscribe(id => this.product = id)    
+    const product_id = +this.route.snapshot.paramMap.get('productID');
+    this.getProductById(product_id);
+    
   }
-
+  getProductById(id: number) {
+    this.categoryService.gerProductByProductId(id).subscribe(p => this.product=p)
+  }
 
 }

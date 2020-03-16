@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { iCategory, iProduct } from './model';
+import {categories, ICatergory} from 'src/app/category';
+import {Observable, of} from 'rxjs';
+import { products,IProduct } from '../product';
 
 @Injectable({
   providedIn: 'root'
@@ -8,25 +11,19 @@ import { iCategory, iProduct } from './model';
 export class CategoriesService {
 
   constructor() { }
-  private category = new BehaviorSubject<iCategory>({id:1, category:"No category(reselect please)",products:[{id:0,title:'asd',
-  description:'asd'}]});
+  allCategories = categories;
+  allProducts = products;
 
-  currentCategory = this.category.asObservable();
-
-
-  private product = new BehaviorSubject<iProduct>({id:1, title:"No product(reselect please)",description: "asd"});
-  
-  currentProduct = this.product.asObservable();
-
-    
-
-  getCategoryId(category: iCategory) {
-    this.category.next(category)
+  getCategories() : Observable<ICatergory[]> {
+    return of(this.allCategories);
   }
-  getProduct(product: iProduct){
-    this.product.next(product)
+  getCategoryById(id: number): Observable<ICatergory> {
+    return of(this.allCategories.find(category => category.id === id));
   }
-
-
-
+  getProductsByCategoryId(id: number): Observable<IProduct[]> {
+    return of (this.allProducts.filter(product => product.category_id === id));
+  }
+  gerProductByProductId(id: number): Observable<IProduct> {
+    return of(this.allProducts.find(product => product.id === id));
+  }
 }

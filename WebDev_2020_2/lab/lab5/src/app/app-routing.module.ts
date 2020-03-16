@@ -5,11 +5,12 @@ import { ProductsComponent } from './components/products/products.component';
 import { DetailComponent } from './components/detail/detail.component';
 
 
+  
 const routes: Routes = [
   { path: '', redirectTo: "/categories" , pathMatch: "full"},
   { path: 'categories', component: CategoryComponent },
   { path: 'categories/:cateogryId/products', component: ProductsComponent },
-  { path: 'products/:productID', component: DetailComponent }
+  { path: 'categories/:cateogryId/products/:productID', component: DetailComponent }
 
 
 ];
