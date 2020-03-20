@@ -1,0 +1,15 @@
+import math
+
+sum = 0
+
+l = [0]*int(input())
+
+for i in range(len(l)):
+    l[i] = int(input())
+
+
+for i in range(len(l)):
+    sum = sum + l[i]
+
+
+print(sum)

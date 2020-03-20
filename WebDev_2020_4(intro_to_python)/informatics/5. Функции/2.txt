@@ -1,0 +1,13 @@
+import math
+
+def function(a,n):
+  p = a**n
+  return p
+
+
+a = int(input())
+n = int(input())
+
+z = function(a,n)
+
+print(z)

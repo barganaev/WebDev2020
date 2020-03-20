@@ -1,0 +1,10 @@
+import math
+
+n = int(input())
+value = 1
+curSqr = value * value
+
+while curSqr <= n:
+  print(curSqr)
+  value = value + 1
+  curSqr = value * value

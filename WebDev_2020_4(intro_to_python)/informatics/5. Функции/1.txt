@@ -1,0 +1,13 @@
+import math
+
+def function(a,b,c,d):
+  x = min(min(a,b),min(c,d))
+  return x
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+p = function(a,b,c,d)
+
+print(p)
